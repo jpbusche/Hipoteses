@@ -1,0 +1,9 @@
+version: '2'
+services:
+  jupyter:
+    image: jupyter/datascience-notebook
+    volumes:
+      - /home/jpbusche/UnB/TCC/Hipoteses:/home/jovyan/work
+    ports:
+      - "8888:8888"
+    container_name: jupyter_container
